@@ -217,7 +217,14 @@ struct HandlerFunc5Args
 	typedef void (XN_CALLBACK_TYPE* FuncPtr)(Arg1 arg1, Arg2 arg2, Arg3 arg3, Arg4 arg4, Arg5 arg5, void* pCookie);
 };
 
-class EventNoArgs : public EventInterface<HandlerFuncNoArgs::FuncPtr>
+template<class FuncPtr>
+class EventBase : public EventInterface<FuncPtr>
+{
+public:
+	using EventInterface<FuncPtr>::Clear;
+};
+
+class EventNoArgs : public EventBase<HandlerFuncNoArgs::FuncPtr>
 {
 public:
 	XnStatus Raise()
@@ -237,9 +244,9 @@ public:
 };
 
 template <class Arg1>
-class Event1Arg : public EventInterface<typename HandlerFunc1Arg<Arg1>::FuncPtr>
+class Event1Arg : public EventBase<typename HandlerFunc1Arg<Arg1>::FuncPtr>
 {
-	typedef EventInterface<typename HandlerFunc1Arg<Arg1>::FuncPtr> Base;
+	typedef EventBase<typename HandlerFunc1Arg<Arg1>::FuncPtr> Base;
 public:
 	XnStatus Raise(Arg1 arg)
 	{
@@ -263,9 +270,9 @@ class Event : public Event1Arg<const EventArgs&>
 {};
 
 template <class Arg1, class Arg2>
-class Event2Args : public EventInterface<typename HandlerFunc2Args<Arg1, Arg2>::FuncPtr>
+class Event2Args : public EventBase<typename HandlerFunc2Args<Arg1, Arg2>::FuncPtr>
 {
-	typedef EventInterface<typename HandlerFunc2Args<Arg1, Arg2>::FuncPtr> Base;
+	typedef EventBase<typename HandlerFunc2Args<Arg1, Arg2>::FuncPtr> Base;
 public:
 	XnStatus Raise(Arg1 arg1, Arg2 arg2)
 	{
@@ -284,9 +291,9 @@ public:
 };
 
 template <class Arg1, class Arg2, class Arg3>
-class Event3Args : public EventInterface<typename HandlerFunc3Args<Arg1, Arg2, Arg3>::FuncPtr>
+class Event3Args : public EventBase<typename HandlerFunc3Args<Arg1, Arg2, Arg3>::FuncPtr>
 {
-	typedef EventInterface<typename HandlerFunc3Args<Arg1, Arg2, Arg3>::FuncPtr> Base;
+	typedef EventBase<typename HandlerFunc3Args<Arg1, Arg2, Arg3>::FuncPtr> Base;
 public:
 	XnStatus Raise(Arg1 arg1, Arg2 arg2, Arg3 arg3)
 	{
@@ -305,9 +312,9 @@ public:
 };
 
 template <class Arg1, class Arg2, class Arg3, class Arg4>
-class Event4Args : public EventInterface<typename HandlerFunc4Args<Arg1, Arg2, Arg3, Arg4>::FuncPtr>
+class Event4Args : public EventBase<typename HandlerFunc4Args<Arg1, Arg2, Arg3, Arg4>::FuncPtr>
 {
-	typedef EventInterface<typename HandlerFunc4Args<Arg1, Arg2, Arg3, Arg4>::FuncPtr> Base;
+	typedef EventBase<typename HandlerFunc4Args<Arg1, Arg2, Arg3, Arg4>::FuncPtr> Base;
 public:
 	XnStatus Raise(Arg1 arg1, Arg2 arg2, Arg3 arg3, Arg4 arg4)
 	{
@@ -326,9 +333,9 @@ public:
 };
 
 template <class Arg1, class Arg2, class Arg3, class Arg4, class Arg5>
-class Event5Args : public EventInterface<typename HandlerFunc5Args<Arg1, Arg2, Arg3, Arg4, Arg5>::FuncPtr>
+class Event5Args : public EventBase<typename HandlerFunc5Args<Arg1, Arg2, Arg3, Arg4, Arg5>::FuncPtr>
 {
-	typedef EventInterface<typename HandlerFunc5Args<Arg1, Arg2, Arg3, Arg4, Arg5>::FuncPtr> Base;
+	typedef EventBase<typename HandlerFunc5Args<Arg1, Arg2, Arg3, Arg4, Arg5>::FuncPtr> Base;
 public:
 	XnStatus Raise(Arg1 arg1, Arg2 arg2, Arg3 arg3, Arg4 arg4, Arg5 arg5)
 	{
