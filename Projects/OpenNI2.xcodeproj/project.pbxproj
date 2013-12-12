@@ -493,18 +493,6 @@
 		BE2A354C174F00D2006B0ADF /* XnStreamCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A3540174F00D2006B0ADF /* XnStreamCompression.h */; };
 		BE2A354D174F00D2006B0ADF /* XnStreamFormats.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A3541174F00D2006B0ADF /* XnStreamFormats.h */; };
 		BE2A354E174F00D2006B0ADF /* XnUncompressedCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A3542174F00D2006B0ADF /* XnUncompressedCodec.h */; };
-		BE2A357D174F09FE006B0ADF /* GMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2A3571174F09FE006B0ADF /* GMC.cpp */; };
-		BE2A357E174F09FE006B0ADF /* GMC.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A3572174F09FE006B0ADF /* GMC.h */; };
-		BE2A357F174F09FE006B0ADF /* LinAlg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2A3573174F09FE006B0ADF /* LinAlg.cpp */; };
-		BE2A3580174F09FE006B0ADF /* LinAlg.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A3574174F09FE006B0ADF /* LinAlg.h */; };
-		BE2A3581174F09FE006B0ADF /* Registration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2A3575174F09FE006B0ADF /* Registration.cpp */; };
-		BE2A3582174F09FE006B0ADF /* Registration.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A3576174F09FE006B0ADF /* Registration.h */; };
-		BE2A3583174F09FE006B0ADF /* XnGMCProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2A3577174F09FE006B0ADF /* XnGMCProcessor.cpp */; };
-		BE2A3584174F09FE006B0ADF /* XnGMCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A3578174F09FE006B0ADF /* XnGMCProcessor.h */; };
-		BE2A3585174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2A3579174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.cpp */; };
-		BE2A3586174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A357A174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.h */; };
-		BE2A3587174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2A357B174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.cpp */; };
-		BE2A3588174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A357C174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.h */; };
 		BE547338175FD25B00AC9FB1 /* libOpenNI2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2A2E96174EEBB6006B0ADF /* libOpenNI2.dylib */; };
 		BE54733E175FD38000AC9FB1 /* Viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE54733B175FD37E00AC9FB1 /* Viewer.cpp */; };
 		BE54733F175FD38000AC9FB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE54733C175FD37E00AC9FB1 /* main.cpp */; };
@@ -512,6 +500,20 @@
 		BE547344175FD3C300AC9FB1 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE547343175FD3C200AC9FB1 /* GLUT.framework */; };
 		BE55F51C183BC4A700D68816 /* libusbx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE55F50F183BC45D00D68816 /* libusbx.dylib */; };
 		BE55F51D183BC4AD00D68816 /* libusbx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE55F50F183BC45D00D68816 /* libusbx.dylib */; };
+		BE5F3C58185A64AA0032C13F /* OniFrameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5F3C54185A64AA0032C13F /* OniFrameManager.cpp */; };
+		BE5F3C59185A64AA0032C13F /* OniFrameManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F3C55185A64AA0032C13F /* OniFrameManager.h */; };
+		BE5F3C5A185A64AA0032C13F /* OniSensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5F3C56185A64AA0032C13F /* OniSensor.cpp */; };
+		BE5F3C5B185A64AA0032C13F /* OniSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F3C57185A64AA0032C13F /* OniSensor.h */; };
+		BE5F3C62185A65890032C13F /* XnPassThroughImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5F3C5C185A65890032C13F /* XnPassThroughImageProcessor.cpp */; };
+		BE5F3C63185A65890032C13F /* XnPassThroughImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F3C5D185A65890032C13F /* XnPassThroughImageProcessor.h */; };
+		BE5F3C64185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5F3C5E185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.cpp */; };
+		BE5F3C65185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F3C5F185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.h */; };
+		BE5F3C66185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5F3C60185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.cpp */; };
+		BE5F3C67185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F3C61185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.h */; };
+		BE5F3C70185A6CB60032C13F /* DepthUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5F3C6A185A6CB60032C13F /* DepthUtils.cpp */; };
+		BE5F3C71185A6CB60032C13F /* DepthUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F3C6B185A6CB60032C13F /* DepthUtils.h */; };
+		BE5F3C72185A6CB60032C13F /* DepthUtilsImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE5F3C6D185A6CB60032C13F /* DepthUtilsImpl.cpp */; };
+		BE5F3C73185A6CB60032C13F /* DepthUtilsImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5F3C6E185A6CB60032C13F /* DepthUtilsImpl.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -973,18 +975,6 @@
 		BE2A3540174F00D2006B0ADF /* XnStreamCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnStreamCompression.h; sourceTree = "<group>"; };
 		BE2A3541174F00D2006B0ADF /* XnStreamFormats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnStreamFormats.h; sourceTree = "<group>"; };
 		BE2A3542174F00D2006B0ADF /* XnUncompressedCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnUncompressedCodec.h; sourceTree = "<group>"; };
-		BE2A3571174F09FE006B0ADF /* GMC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GMC.cpp; sourceTree = "<group>"; };
-		BE2A3572174F09FE006B0ADF /* GMC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMC.h; sourceTree = "<group>"; };
-		BE2A3573174F09FE006B0ADF /* LinAlg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinAlg.cpp; sourceTree = "<group>"; };
-		BE2A3574174F09FE006B0ADF /* LinAlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinAlg.h; sourceTree = "<group>"; };
-		BE2A3575174F09FE006B0ADF /* Registration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Registration.cpp; sourceTree = "<group>"; };
-		BE2A3576174F09FE006B0ADF /* Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registration.h; sourceTree = "<group>"; };
-		BE2A3577174F09FE006B0ADF /* XnGMCProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XnGMCProcessor.cpp; sourceTree = "<group>"; };
-		BE2A3578174F09FE006B0ADF /* XnGMCProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnGMCProcessor.h; sourceTree = "<group>"; };
-		BE2A3579174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XnUncompressedYUVImageProcessor.cpp; sourceTree = "<group>"; };
-		BE2A357A174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnUncompressedYUVImageProcessor.h; sourceTree = "<group>"; };
-		BE2A357B174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XnUncompressedYUVtoRGBImageProcessor.cpp; sourceTree = "<group>"; };
-		BE2A357C174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnUncompressedYUVtoRGBImageProcessor.h; sourceTree = "<group>"; };
 		BE547326175FD18600AC9FB1 /* NiViewer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NiViewer; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE54733B175FD37E00AC9FB1 /* Viewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Viewer.cpp; path = ../Samples/SimpleViewer/Viewer.cpp; sourceTree = "<group>"; };
 		BE54733C175FD37E00AC9FB1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../Samples/SimpleViewer/main.cpp; sourceTree = "<group>"; };
@@ -992,6 +982,20 @@
 		BE547341175FD3AD00AC9FB1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		BE547343175FD3C200AC9FB1 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		BE55F50A183BC45C00D68816 /* libusbx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libusbx.xcodeproj; path = ../../libusbx/libusbx/libusbx.xcodeproj; sourceTree = "<group>"; };
+		BE5F3C54185A64AA0032C13F /* OniFrameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OniFrameManager.cpp; sourceTree = "<group>"; };
+		BE5F3C55185A64AA0032C13F /* OniFrameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OniFrameManager.h; sourceTree = "<group>"; };
+		BE5F3C56185A64AA0032C13F /* OniSensor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OniSensor.cpp; sourceTree = "<group>"; };
+		BE5F3C57185A64AA0032C13F /* OniSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OniSensor.h; sourceTree = "<group>"; };
+		BE5F3C5C185A65890032C13F /* XnPassThroughImageProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XnPassThroughImageProcessor.cpp; sourceTree = "<group>"; };
+		BE5F3C5D185A65890032C13F /* XnPassThroughImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnPassThroughImageProcessor.h; sourceTree = "<group>"; };
+		BE5F3C5E185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XnUncompressedYUV422toRGBImageProcessor.cpp; sourceTree = "<group>"; };
+		BE5F3C5F185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnUncompressedYUV422toRGBImageProcessor.h; sourceTree = "<group>"; };
+		BE5F3C60185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XnUncompressedYUYVtoRGBImageProcessor.cpp; sourceTree = "<group>"; };
+		BE5F3C61185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XnUncompressedYUYVtoRGBImageProcessor.h; sourceTree = "<group>"; };
+		BE5F3C6A185A6CB60032C13F /* DepthUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthUtils.cpp; sourceTree = "<group>"; };
+		BE5F3C6B185A6CB60032C13F /* DepthUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthUtils.h; sourceTree = "<group>"; };
+		BE5F3C6D185A6CB60032C13F /* DepthUtilsImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthUtilsImpl.cpp; sourceTree = "<group>"; };
+		BE5F3C6E185A6CB60032C13F /* DepthUtilsImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthUtilsImpl.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1162,6 +1166,7 @@
 		BE2A2F83174EEFBA006B0ADF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BE5F3C68185A6CB60032C13F /* DepthUtils */,
 				BE2A2F85174EEFBA006B0ADF /* Core */,
 				BE2A3027174EEFBA006B0ADF /* Drivers */,
 			);
@@ -1172,6 +1177,10 @@
 		BE2A2F85174EEFBA006B0ADF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BE5F3C54185A64AA0032C13F /* OniFrameManager.cpp */,
+				BE5F3C55185A64AA0032C13F /* OniFrameManager.h */,
+				BE5F3C56185A64AA0032C13F /* OniSensor.cpp */,
+				BE5F3C57185A64AA0032C13F /* OniSensor.h */,
 				BE2A2F88174EEFBA006B0ADF /* OniCommon.h */,
 				BE2A2F89174EEFBA006B0ADF /* OniContext.cpp */,
 				BE2A2F8A174EEFBA006B0ADF /* OniContext.h */,
@@ -1371,18 +1380,12 @@
 		BE2A30DF174EEFBA006B0ADF /* Sensor */ = {
 			isa = PBXGroup;
 			children = (
-				BE2A3571174F09FE006B0ADF /* GMC.cpp */,
-				BE2A3572174F09FE006B0ADF /* GMC.h */,
-				BE2A3573174F09FE006B0ADF /* LinAlg.cpp */,
-				BE2A3574174F09FE006B0ADF /* LinAlg.h */,
-				BE2A3575174F09FE006B0ADF /* Registration.cpp */,
-				BE2A3576174F09FE006B0ADF /* Registration.h */,
-				BE2A3577174F09FE006B0ADF /* XnGMCProcessor.cpp */,
-				BE2A3578174F09FE006B0ADF /* XnGMCProcessor.h */,
-				BE2A3579174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.cpp */,
-				BE2A357A174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.h */,
-				BE2A357B174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.cpp */,
-				BE2A357C174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.h */,
+				BE5F3C5C185A65890032C13F /* XnPassThroughImageProcessor.cpp */,
+				BE5F3C5D185A65890032C13F /* XnPassThroughImageProcessor.h */,
+				BE5F3C5E185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.cpp */,
+				BE5F3C5F185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.h */,
+				BE5F3C60185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.cpp */,
+				BE5F3C61185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.h */,
 				BE2A30E0174EEFBA006B0ADF /* Bayer.cpp */,
 				BE2A30E1174EEFBA006B0ADF /* Bayer.h */,
 				BE2A30E2174EEFBA006B0ADF /* IXnSensorStream.h */,
@@ -1630,6 +1633,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BE5F3C68185A6CB60032C13F /* DepthUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BE5F3C6A185A6CB60032C13F /* DepthUtils.cpp */,
+				BE5F3C6B185A6CB60032C13F /* DepthUtils.h */,
+				BE5F3C6D185A6CB60032C13F /* DepthUtilsImpl.cpp */,
+				BE5F3C6E185A6CB60032C13F /* DepthUtilsImpl.h */,
+			);
+			path = DepthUtils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1730,6 +1744,7 @@
 				BE2A3268174EEFBC006B0ADF /* XnImageStream.h in Headers */,
 				BE2A326A174EEFBC006B0ADF /* XnIntProperty.h in Headers */,
 				BE2A326C174EEFBC006B0ADF /* XnIntPropertySynchronizer.h in Headers */,
+				BE5F3C5B185A64AA0032C13F /* OniSensor.h in Headers */,
 				BE2A326E174EEFBC006B0ADF /* XnIRStream.h in Headers */,
 				BE2A3270174EEFBC006B0ADF /* XnPixelStream.h in Headers */,
 				BE2A3272174EEFBC006B0ADF /* XnProperty.h in Headers */,
@@ -1844,6 +1859,7 @@
 				BE2A3547174F00D2006B0ADF /* XnCodec.h in Headers */,
 				BE2A3548174F00D2006B0ADF /* XnCodecBase.h in Headers */,
 				BE2A3549174F00D2006B0ADF /* XnCodecIDs.h in Headers */,
+				BE5F3C59185A64AA0032C13F /* OniFrameManager.h in Headers */,
 				BE2A354A174F00D2006B0ADF /* XnJpegCodec.h in Headers */,
 				BE2A354C174F00D2006B0ADF /* XnStreamCompression.h in Headers */,
 				BE2A354D174F00D2006B0ADF /* XnStreamFormats.h in Headers */,
@@ -1855,12 +1871,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE2A357E174F09FE006B0ADF /* GMC.h in Headers */,
-				BE2A3580174F09FE006B0ADF /* LinAlg.h in Headers */,
-				BE2A3582174F09FE006B0ADF /* Registration.h in Headers */,
-				BE2A3584174F09FE006B0ADF /* XnGMCProcessor.h in Headers */,
-				BE2A3586174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.h in Headers */,
-				BE2A3588174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.h in Headers */,
+				BE5F3C71185A6CB60032C13F /* DepthUtils.h in Headers */,
+				BE5F3C67185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.h in Headers */,
+				BE5F3C65185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.h in Headers */,
+				BE5F3C63185A65890032C13F /* XnPassThroughImageProcessor.h in Headers */,
+				BE5F3C73185A6CB60032C13F /* DepthUtilsImpl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1979,6 +1994,7 @@
 				BE2A2EF2174EED10006B0ADF /* XnFPSCalculator.cpp in Sources */,
 				BE2A2EF3174EED10006B0ADF /* XnLib.cpp in Sources */,
 				BE2A2EF4174EED10006B0ADF /* XnLog.cpp in Sources */,
+				BE5F3C58185A64AA0032C13F /* OniFrameManager.cpp in Sources */,
 				BE2A2EF5174EED10006B0ADF /* XnLogAndroidWriter.cpp in Sources */,
 				BE2A2EF7174EED10006B0ADF /* XnLogConsoleWriter.cpp in Sources */,
 				BE2A2EF9174EED10006B0ADF /* XnLogFileWriter.cpp in Sources */,
@@ -2020,6 +2036,7 @@
 				BE2A341C174EF2CA006B0ADF /* jdapimin.c in Sources */,
 				BE2A341D174EF2CA006B0ADF /* jdapistd.c in Sources */,
 				BE2A341E174EF2CA006B0ADF /* jdatadst.c in Sources */,
+				BE5F3C5A185A64AA0032C13F /* OniSensor.cpp in Sources */,
 				BE2A341F174EF2CA006B0ADF /* jdatasrc.c in Sources */,
 				BE2A3420174EF2CA006B0ADF /* jdcoefct.c in Sources */,
 				BE2A3421174EF2CA006B0ADF /* jdcolor.c in Sources */,
@@ -2119,6 +2136,7 @@
 				BE2A3506174EFDB0006B0ADF /* jidctred.c in Sources */,
 				BE2A3507174EFDB0006B0ADF /* jmemmgr.c in Sources */,
 				BE2A3508174EFDB0006B0ADF /* jmemnobs.c in Sources */,
+				BE5F3C64185A65890032C13F /* XnUncompressedYUV422toRGBImageProcessor.cpp in Sources */,
 				BE2A3509174EFDB0006B0ADF /* jquant1.c in Sources */,
 				BE2A350A174EFDB0006B0ADF /* jquant2.c in Sources */,
 				BE2A350B174EFDB0006B0ADF /* jutils.c in Sources */,
@@ -2140,6 +2158,7 @@
 				BE2A34ED174EFD9E006B0ADF /* jctrans.c in Sources */,
 				BE2A34EE174EFD9E006B0ADF /* jdapimin.c in Sources */,
 				BE2A34EF174EFD9E006B0ADF /* jdapistd.c in Sources */,
+				BE5F3C70185A6CB60032C13F /* DepthUtils.cpp in Sources */,
 				BE2A34F0174EFD9E006B0ADF /* jdatadst.c in Sources */,
 				BE2A34F1174EFD9E006B0ADF /* jdatasrc.c in Sources */,
 				BE2A34F2174EFD9E006B0ADF /* jdcoefct.c in Sources */,
@@ -2173,6 +2192,7 @@
 				BE2A34AA174EFD6B006B0ADF /* XnFormats.cpp in Sources */,
 				BE2A34AB174EFD6B006B0ADF /* XnFormatsMirror.cpp in Sources */,
 				BE2A34AC174EFD6B006B0ADF /* XnFormatsStatus.cpp in Sources */,
+				BE5F3C72185A6CB60032C13F /* DepthUtilsImpl.cpp in Sources */,
 				BE2A34AD174EFD6B006B0ADF /* XnStreamCompression.cpp in Sources */,
 				BE2A34AE174EFD6B006B0ADF /* Bayer.cpp in Sources */,
 				BE2A34AF174EFD6B006B0ADF /* Uncomp.cpp in Sources */,
@@ -2234,6 +2254,8 @@
 				BE2A348B174EFCEC006B0ADF /* XnDDK.cpp in Sources */,
 				BE2A348C174EFCEC006B0ADF /* XnDDKStatus.cpp in Sources */,
 				BE2A348D174EFCEC006B0ADF /* XnDepthStream.cpp in Sources */,
+				BE5F3C62185A65890032C13F /* XnPassThroughImageProcessor.cpp in Sources */,
+				BE5F3C66185A65890032C13F /* XnUncompressedYUYVtoRGBImageProcessor.cpp in Sources */,
 				BE2A348E174EFCEC006B0ADF /* XnDeviceBase.cpp in Sources */,
 				BE2A348F174EFCEC006B0ADF /* XnDeviceModule.cpp in Sources */,
 				BE2A3490174EFCEC006B0ADF /* XnDeviceModuleHolder.cpp in Sources */,
@@ -2253,12 +2275,6 @@
 				BE2A349E174EFCEC006B0ADF /* XnShiftToDepthStreamHelper.cpp in Sources */,
 				BE2A349F174EFCEC006B0ADF /* XnStreamingStream.cpp in Sources */,
 				BE2A34A0174EFCEC006B0ADF /* XnStringProperty.cpp in Sources */,
-				BE2A357D174F09FE006B0ADF /* GMC.cpp in Sources */,
-				BE2A357F174F09FE006B0ADF /* LinAlg.cpp in Sources */,
-				BE2A3581174F09FE006B0ADF /* Registration.cpp in Sources */,
-				BE2A3583174F09FE006B0ADF /* XnGMCProcessor.cpp in Sources */,
-				BE2A3585174F09FE006B0ADF /* XnUncompressedYUVImageProcessor.cpp in Sources */,
-				BE2A3587174F09FE006B0ADF /* XnUncompressedYUVtoRGBImageProcessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
