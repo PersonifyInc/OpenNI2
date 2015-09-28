@@ -33,18 +33,9 @@ set (ONI_FILE_SRC
 
 add_library(OpenNI2 SHARED ${CORE_SRC} ${ONI_FILE_SRC})
 
-# This prevents libraries that link against libusbx from also
-# depending on libusbx's dependencies.
-if(APPLE)
-    set_target_properties(OpenNI2
-        PROPERTIES
-        LINK_INTERFACE_LIBRARIES ""
-  )
-endif(APPLE)
-
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DOPENNI2_EXPORT")
 
-target_link_libraries(OpenNI2 JPEG XnLib)
+target_link_libraries(OpenNI2 PRIVATE JPEG XnLib)
 
 add_custom_command(TARGET OpenNI2 POST_BUILD
                    COMMAND ${CMAKE_COMMAND} ARGS -E copy 
