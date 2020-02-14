@@ -20,7 +20,7 @@ if(NOT WIN32)
         openni2-libusb
 
         GIT_REPOSITORY "https://github.com/libusb/libusb.git"
-        GIT_TAG "master"
+        GIT_TAG "v1.0.23"
 
         UPDATE_COMMAND  ${CMAKE_COMMAND} -E copy
                         ${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/libusb/CMakeLists.txt
